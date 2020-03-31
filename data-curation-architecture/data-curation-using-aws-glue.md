@@ -25,6 +25,8 @@ You can use Glue crawlers to create tables in your catalog after uploading the f
 
 #### Solution Walk through
 
+![](../.gitbook/assets/image%20%282%29.png)
+
 _**Import necessary spark libraries.**_
 
 ```python

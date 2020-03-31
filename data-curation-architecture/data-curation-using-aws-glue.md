@@ -64,7 +64,7 @@ target_tbl = sqlContext.table("refarch_database.c_orders_output")
 final_df = stg_df_final.unionByName(target_tbl)
 ```
 
-#### _Deduplicate  dataframe using `row_number()` and `window()` and select the most latest record for each `order_id`_
+#### _De-duplicate  dataframe using `row_number()` and `window()` and select the most latest record for each `order_id`_
 
 ```python
 rownum = F.row_number().over(Window.partitionBy("order_id")\

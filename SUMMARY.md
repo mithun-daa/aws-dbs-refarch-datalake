@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Overview of a Datalake on AWS](README.md)
-* [Datalake Storage Services FAQs](datalake-storage-architecture/README.md)
+* [Datalake Storage Architectures](datalake-storage-architecture/README.md)
   * [Amazon S3: A Storage Foundation for Datalakes on AWS](datalake-storage-architecture/storage-foundation.md)
 * [Data Catalog Architecture](data-catalog-architecture/README.md)
   * [Schema Management Within a Data Catalog](data-catalog-architecture/schema-management-architectures.md)

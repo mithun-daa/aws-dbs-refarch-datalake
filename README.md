@@ -4,11 +4,11 @@ description: >-
   blueprint of a datalake on AWS.
 ---
 
-# Overview of a Datalake on AWS
+# Overview of a Data Lake on AWS
 
-## Datalake Overview
+## Data Lake Overview
 
-A [**datalake**](https://en.wikipedia.org/wiki/Data_lake) is a data repository that stores data in its raw format until it is used for analytics. It is designed to store massive amount of data at scale. A schema to the dataset in data lake is given as part of transformation while reading it. Below is a pictorial representation of a typical datalake on AWS cloud.
+A [**data lake**](https://en.wikipedia.org/wiki/Data_lake) is a data repository that stores data in its raw format until it is used for analytics. It is designed to store massive amount of data at scale. A schema to the dataset in data lake is given as part of transformation while reading it. Below is a pictorial representation of a typical datalake on AWS cloud.
 
 ![A datalake blueprint on AWS](.gitbook/assets/image.png)
 

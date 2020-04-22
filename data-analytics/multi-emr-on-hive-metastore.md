@@ -18,3 +18,5 @@ In this architecture, we will provide a walkthrough of how to set up a centraliz
 
 * [Setting up an external database as metastore on EMR](https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-hive-metastore-external.html)
 
+## Have suggestions? Join our [Slack channel](https://join.slack.com/t/cat-cwp4274/shared_invite/zt-e2ztjpgw-Bugw46iXsLbZ~V54AljWsA) to  share feedback.
+

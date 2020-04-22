@@ -21,3 +21,5 @@ In this architecture, we = walk you through how to use AWS DataSync and DataSync
 * [Getting started with AWS DataSync](https://docs.aws.amazon.com/datasync/latest/userguide/getting-started.html)
 * [How AWS DataSync works](https://docs.aws.amazon.com/datasync/latest/userguide/how-datasync-works.html)
 
+## Have suggestions? Join our [Slack channel](https://join.slack.com/t/cat-cwp4274/shared_invite/zt-e2ztjpgw-Bugw46iXsLbZ~V54AljWsA) to  share feedback.
+

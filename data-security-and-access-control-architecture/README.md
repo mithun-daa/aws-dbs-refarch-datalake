@@ -12,3 +12,7 @@ Primarily, access control and data security in datalakes within AWS can be enfor
 1. [Access control using IAM](./)
 2. [Fine grained access control using AWS Lakeformation](fine-grained-access-control-with-amazon-lake-formation.md)
 
+## Have suggestions? Join our [Slack channel](https://join.slack.com/t/cat-cwp4274/shared_invite/zt-e2ztjpgw-Bugw46iXsLbZ~V54AljWsA) to  share feedback.
+
+
+

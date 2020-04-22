@@ -96,3 +96,5 @@ January 3rd, 2019's Orders will be found at:
 
 `s3://datalake/modelled/production/orders/order_data=2019-01-03/...`
 
+## Have suggestions? Join our [Slack channel](https://join.slack.com/t/cat-cwp4274/shared_invite/zt-e2ztjpgw-Bugw46iXsLbZ~V54AljWsA) to  share feedback.
+

@@ -15,3 +15,5 @@
 3. Kinesis Firehose is [configured to read data from the Kinesis Data Stream](https://docs.aws.amazon.com/firehose/latest/dev/writing-with-kinesis-streams.html)
 4. Firehose batches records based on count or target file size, and then compresses and encrypts files before delivering to S3
 
+## Have suggestions? Join our [Slack channel](https://join.slack.com/t/cat-cwp4274/shared_invite/zt-e2ztjpgw-Bugw46iXsLbZ~V54AljWsA) to  share feedback.
+

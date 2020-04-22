@@ -25,7 +25,7 @@ You can use Glue crawlers to create tables in your catalog after uploading the f
 
 #### Solution Walk through
 
-![](../.gitbook/assets/image%20%282%29.png)
+![](../.gitbook/assets/image%20%283%29.png)
 
 _**Import necessary spark libraries.**_
 
@@ -108,4 +108,6 @@ final_union_dedupe.drop("row_num").coalesce(2).write.partitionBy(["order_date"])
 2. Use this method when number of partition impacted is very less.
 3. This method can be used for large tables only of number of partitions impacted is small. 
 4. Can be executed for frequently arriving datasets as the process is idempotent.
+
+## Have suggestions? Join our [Slack channel](https://join.slack.com/t/cat-cwp4274/shared_invite/zt-e2ztjpgw-Bugw46iXsLbZ~V54AljWsA) to  share feedback.
 

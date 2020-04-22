@@ -62,7 +62,7 @@ As the data is ingested in the datalake, it goes through multiple stages of tran
 
  Often, businesses get similar datasets from more than one sources. For example, a customer for a large business can come from many ERP systems, CRMs or any specific app that stores customer information. When similar datasets flow into the lake from many sources, it becomes important to transform, conform and create a single source and version of truth for the enterprise. Our customers also want to provide sandbox environments to data scientists/analysts to temporarily store the result of their experiments with governance.
 
-For conformed data and sandbox capabilities, it is recommended to create separate databases. To support conformed datasets that are curated from same business entities \(Customers, Orders\) from more than one sources customers should create databases by business entities. Similarly, to support sandboxing on the datalakes it is highly recommended create separate databases with strict life cycle policy enforced in the storage layer.
+For conformed data and sandbox capabilities, it is recommended to create separate databases. To support conformed datasets that are curated from same business entities \(Customers, Orders\) from more than one sources customers should create databases by business entities. Similarly, to support sandboxing on the data lakes it is highly recommended create separate databases with strict life cycle policy enforced in the storage layer.
 
-
+## Have suggestions? Join our [Slack channel](https://join.slack.com/t/cat-cwp4274/shared_invite/zt-e2ztjpgw-Bugw46iXsLbZ~V54AljWsA) to  share feedback.
 

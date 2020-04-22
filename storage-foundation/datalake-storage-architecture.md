@@ -11,7 +11,5 @@ There are 3 primary reasons why solutions like HDFS storage and data warehouse\(
 1. **Scalability:** Datalakes are supposed to store all data of an organization. As the data volume grows. HDFS or data warehouse storage systems needs to be scaled from time to time. 
 2. **Open data format support and storage-compute couple:** HDFS supports open data format, however it comes coupled with compute services. Similarly, DW systems store data in proprietary format that is not accessible to external computes for analytics.
 
-\*\*\*\*
-
-
+## Have suggestions? Join our [Slack channel](https://join.slack.com/t/cat-cwp4274/shared_invite/zt-e2ztjpgw-Bugw46iXsLbZ~V54AljWsA) to  share feedback.
 

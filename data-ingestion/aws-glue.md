@@ -20,3 +20,5 @@ In this architecture, we are using AWS Glue to extract data from relational data
 
 [How to extract, transform, and load data for analytic processing using AWS Glue](https://aws.amazon.com/blogs/database/how-to-extract-transform-and-load-data-for-analytic-processing-using-aws-glue-part-2)
 
+## Have suggestions? Join our [Slack channel](https://join.slack.com/t/cat-cwp4274/shared_invite/zt-e2ztjpgw-Bugw46iXsLbZ~V54AljWsA) to  share feedback.
+

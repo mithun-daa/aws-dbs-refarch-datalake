@@ -11,3 +11,5 @@ An S3 datalake efficiently decouples storage and compute, which makes it is easy
 3. _\*\*\*\*_[_**Querying Data lake using EMR and External Hive Catalog**_](multi-emr-on-hive-metastore.md)_\*\*\*\*_
 4. _\*\*\*\*_[_**Querying Datalake using EMR**_](multi-emr-on-glue-catalog.md)_\*\*\*\*_
 
+## Have suggestions? Join our [Slack channel](https://join.slack.com/t/cat-cwp4274/shared_invite/zt-e2ztjpgw-Bugw46iXsLbZ~V54AljWsA) to  share feedback.
+

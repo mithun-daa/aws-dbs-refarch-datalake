@@ -8,7 +8,7 @@
 
 In this model, a set of initial [data stewards](https://en.wikipedia.org/wiki/Data_steward) represented by IAM roles and users  known as  [ Datalake Administrators](https://docs.aws.amazon.com/lake-formation/latest/dg/getting-started-setup.html#create-data-lake-admin) can grant Lake Formation permissions on data locations and Data Catalog resources to any principal \(including self\). Once the permissions on various data lake objects are created, users \(IAM Users, Roles\) can access to the datalake objects through their preferred compute engines like [EMR](https://aws.amazon.com/emr/), [Glue](https://aws.amazon.com/glue/), [Athena](https://aws.amazon.com/athena/) that's integrated with [AWS LakeFomation](https://aws.amazon.com/lake-formation/). Lake formation authorizes access to datalake resources when the [integrated compute engines](https://docs.aws.amazon.com/lake-formation/latest/dg/what-is-lake-formation.html#service-integrations)  execute workloads on data catalog.
 
-![](../.gitbook/assets/image%20%285%29.png)
+![](../.gitbook/assets/image%20%286%29.png)
 
 ### Access policy options with AWS LakeFormation
 
@@ -45,5 +45,7 @@ As of 03/31/2020, AWS Lake formation provides prermissions at various levels.
 
 When an user runs a workload on Lakeformation catalog using an integrated compute service,  the compute service requests for access to Lakeformation. Based on the access level defined on the catalog objects, AWS Lake formation vends short-term credentials to the compute service.  The compute service  then uses the temporary credentials to directly access S3 objects and execute the workload. For column level access control, the compute engine filters out attributes that the user/role  don't have access to after the objects have been downloaded from S3 as part processing\(as of 03/31/2020\).
 
-![](../.gitbook/assets/image%20%284%29.png)
+![](../.gitbook/assets/image%20%285%29.png)
+
+## Have suggestions? Join our [Slack channel](https://join.slack.com/t/cat-cwp4274/shared_invite/zt-e2ztjpgw-Bugw46iXsLbZ~V54AljWsA) to  share feedback.
 

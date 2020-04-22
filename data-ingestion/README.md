@@ -13,5 +13,7 @@ The key to ‘democratizing’ data, and making it available to the widest numbe
 1. _\*\*\*\*_[_**Ingest events and logs data using Kinesis Firehose**_](kinesis-firehose-and-kpl.md)_\*\*\*\*_
 2. _\*\*\*\*_[_**Ingest database changes using Database Migration Service**_](dms-and-lambda.md)_\*\*\*\*_
 3. _\*\*\*\*_[_**Ingest data from JDBC sources using Amazon Glue**_](aws-glue.md)_\*\*\*\*_
-4. _\*\*\*\*_[_**Ingest datafiles using Amazon DataSync**_](aws-datasync-on-prem-nfs.md)_\*\*\*\*_
+4. _\*\*\*\*_[_**Ingest datafiles using Amazon DataSync**_](aws-datasync-on-prem-nfs.md)
+
+## Have suggestions? Join our [Slack channel](https://join.slack.com/t/cat-cwp4274/shared_invite/zt-e2ztjpgw-Bugw46iXsLbZ~V54AljWsA) to  share feedback.
 

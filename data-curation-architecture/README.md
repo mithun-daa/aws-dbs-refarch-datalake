@@ -19,3 +19,5 @@ Upsert or Merging data in a datalake is a very common requirement. Organizations
 
 1. [Overwrite partitions using pyspark](data-curation-using-pyspark.md)
 
+## Have suggestions? Join our [Slack channel](https://join.slack.com/t/cat-cwp4274/shared_invite/zt-e2ztjpgw-Bugw46iXsLbZ~V54AljWsA) to  share feedback.
+

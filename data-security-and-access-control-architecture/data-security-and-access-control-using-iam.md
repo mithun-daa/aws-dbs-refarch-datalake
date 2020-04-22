@@ -14,7 +14,7 @@ You can manage access to your Amazon S3 resources using robust access policies. 
 
 For most datalake environments, we recommend using identity policies, so that permissions to access data assets can be dynamically tied to the end user performing data processing and analytics. Identity policies are associated with [IAM service principals](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_principal.html), and are only valid for a short period of time before requiring renewal with the IAM service. In most enterprise datalakes, your end users will be using [Identity Federation](https://aws.amazon.com/identity/federation) to access AWS, which means that you are linking datalake access policies to existing Directory Service groups.
 
-![Access Control Using IAM](../.gitbook/assets/image%20%283%29.png)
+![Access Control Using IAM](../.gitbook/assets/image%20%284%29.png)
 
 #### Encryption of data
 
@@ -46,4 +46,6 @@ Datalake solutions are often multi-tenant for your customers, with multiple inte
 ### Additional Material
 
 1. [IAM Best Practices Blog](https://aws.amazon.com/blogs/security/adhere-to-iam-best-practices-in-2016/)
+
+## Have suggestions? Join our [Slack channel](https://join.slack.com/t/cat-cwp4274/shared_invite/zt-e2ztjpgw-Bugw46iXsLbZ~V54AljWsA) to  share feedback.
 

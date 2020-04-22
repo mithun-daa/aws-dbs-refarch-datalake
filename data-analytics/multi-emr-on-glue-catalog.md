@@ -20,3 +20,5 @@ In this architecture, we show how to leverage AWS Glue Data Catalog to execute q
 
 * [Use Glue Catalog as Metastore](https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-hive-metastore-glue.html)
 
+## Have suggestions? Join our [Slack channel](https://join.slack.com/t/cat-cwp4274/shared_invite/zt-e2ztjpgw-Bugw46iXsLbZ~V54AljWsA) to  share feedback.
+

@@ -1,4 +1,4 @@
-# Datalake Storage Architecture FAQs
+# Data lake Storage Architecture FAQs
 
 ## What  features to look for while selecting a cloud datalake storage platform?
 

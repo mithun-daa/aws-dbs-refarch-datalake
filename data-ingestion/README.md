@@ -1,4 +1,4 @@
-# Ingestion Architectures for Datalakes on AWS
+# Ingestion Architectures for Data lakes on AWS
 
 ### Overview
 

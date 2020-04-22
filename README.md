@@ -1,7 +1,7 @@
 ---
 description: >-
-  This page provides an overview of what is a datalake and provides a highlevel
-  blueprint of a datalake on AWS.
+  This page provides an overview of what is a data lake and provides a high
+  level blueprint of a data lake on AWS.
 ---
 
 # Overview of a Data Lake on AWS

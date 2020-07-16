@@ -26,7 +26,7 @@ For setting up a single lake formation data catalog with data in different S3 bu
 
 ### How do I organize my data catalog?
 
-The success of your data lake journey is based on how analytic users use the data catalog. Therefore, a thoughtful approach to organize your data lake will go a long way. Datalake is not a system of record, it is stores data that's generated elsewhere. In many organizations, people look for datasets based on the system of records such as HR, ERP,  CRM, Ordering, Clickstream etc.  Similarly, it is a common pattern for prople to look for  datasets by their transformation lifecycle stage within the data lake such as raw, curated and conformed. So, it is always a good idea to define a design convention that's easy and self-explanatory. 
+The success of your data lake journey is based on how analytic users use the data catalog. Therefore, a thoughtful approach to organize your data lake will go a long way. Datalake is not a system of record, it is stores data that's generated elsewhere. In many organizations, people look for datasets based on the system of records such as HR, ERP,  CRM, Ordering, Clickstream etc.  Similarly, it is a common pattern for people to look for  datasets by their transformation lifecycle stage within the data lake such as raw, curated and conformed. So, it is always a good idea to define a design convention that's easy and self-explanatory. 
 
 When multiple domains share the same AWS account, to effectively organize different data within the same catalog, Amazon LakeFormation provides the following components.
 
@@ -38,7 +38,7 @@ When multiple domains share the same AWS account, to effectively organize differ
   * 
 * **Organize catalog databases by source of data**
 
-We recommend out customers to phisically separate their  systems by different AWS accounts for scalability and reduction of blast radius of impact during an event. However, many of our customers use the same account for more than one application. In such cases, separate databases to store data generated from different source systems within the same account.  This makes it easy for users to search datasets by source source systems. The primary reason for this design pattern are: 
+In general, we recommend out customers to phisically separate their systems by different AWS accounts for scalability and reduction of blast radius of impact during an event. However, many of our customers use the same account for more than one application. In such cases, separate databases to store data generated from different source systems within the same account.  This makes it easy for users to search datasets by source source systems. The primary reason for this design pattern are: 
 
 * It makes it easier for data consumers to discover data by source of the data 
 * Related datasets are colocated in the database.
@@ -52,17 +52,15 @@ We recommend out customers to phisically separate their  systems by different AW
 
 As the data is ingested in the datalake, it goes through multiple stages of transformation lifecycle. Each stage has a different format and shape. It's always recommended to define  naming conventions within a database that unambiguously segregates the life cycle stage of same data. Please refer to the diagram below for a sample naming convention. Customers are advised to choose naming convention that suits to their business and customer needs.
 
-
-
-![](../.gitbook/assets/data-catalog.png)
+![](../.gitbook/assets/image%20%2811%29.png)
 
 
 
 * **Managing conformed data and user spaces within the catalog.**
 
- Often, businesses get similar datasets from more than one sources. For example, a customer for a large business can come from many ERP systems, CRMs or any specific app that stores customer information. When similar datasets flow into the lake from many sources, it becomes important to transform, conform and create a single source and version of truth for the enterprise. Our customers also want to provide sandbox environments to data scientists/analysts to temporarily store the result of their experiments with governance.
+ Often, businesses get similar datasets from more than one sources. For example, a customer for a large business can come from many ERP systems, CRMs or any specific app that stores customer information. When similar datasets flow into the lake from many sources, it becomes important to transform, conform and create a single source and version of truth for the enterprise. Our customers also want to provide sandbox environments to data scientists/analysts to temporarily store the result of their curations and experiments with governance.
 
-For conformed data and sandbox capabilities, it is recommended to create separate databases. To support conformed datasets that are curated from same business entities \(Customers, Orders\) from more than one sources customers should create databases by business entities. Similarly, to support sandboxing on the data lakes it is highly recommended create separate databases with strict life cycle policy enforced in the storage layer.
+For conformed data and sandbox capabilities, it is recommended to create separate consumer accounts and databases where possible. To support conformed datasets that are curated from same business entities \(Customers, Orders\) from more than one sources customers may create databases by business entities. Similarly, to support sandboxing on the data lakes it is highly recommended create separate databases within the consumer accounts with strict life cycle policy enforced in the storage layer.
 
 ## Have suggestions? Join our [Slack channel](https://join.slack.com/t/cat-cwp4274/shared_invite/zt-e2ztjpgw-Bugw46iXsLbZ~V54AljWsA) to  share feedback.
 

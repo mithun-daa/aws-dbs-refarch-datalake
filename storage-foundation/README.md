@@ -7,7 +7,7 @@ Amazon S3 provides the ideal datalake storage foundation by offering a highly sc
 ## S3 Storage Definitions
 
 * **Region**: Amazon cloud computing resources are hosted in multiple locations world-wide. These locations are composed of AWS [Regions](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RegionsAndAvailabilityZones.html) and Availability Zones. Each AWS Region is a separate geographic area. Each AWS Region has multiple, isolated locations known as Availability Zones.
-* **Bucket**: Amazon S3 organises data into Buckets, which are created in a Region and which can have security Plicies applied to Bucket contents which dictate which users, roles, and behaviours are applied. A single AWS Account can have 1000 buckets _\(Q1 2019\)_
+* **Bucket**: Amazon S3 organises data into Buckets, which are created in a Region and which can have security Policies applied to Bucket contents which dictate which users, roles, and behaviours are applied. A single AWS Account can have 1000 buckets _\(Q1 2019\)_
 * **Object**: Amazon S3 stores objects, which for most customers are Files, but which can be any type of data. Objects are stored at a Prefix, which provides them with a unique URL. Objects have a name, as well as metadata and tags associated with them.
 * **Prefix**: '/' \(Slash\) delimited path where an Object is stored within the Bucket. The combination of the Bucket Name, Prefix, and Object Name uniquely identify the Object globally
 * **Bucket Policy**: S3 can store security Policies in the form of JSON documents which allow you to control which users and roles can access the bucket, and how, as well as setting requirements for how data is stored in the Bucket \(for example requiring encryption\).

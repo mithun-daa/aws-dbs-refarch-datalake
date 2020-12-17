@@ -18,7 +18,7 @@ The challenges that inhibited building a data lake were keeping track of all  ra
 
 ### How many data catalogs do I need?
 
-Number of catalogs that you need for your corporate is entirely dependent on your use case and analytics culture. However, we highly recommend our customers to build multiple data catalog across many AWS accounts\(or optionally regions\) on top of their S3 data lakes for scalability and data domain ownership. To avoid data silos, ensure single source of truth and provide users with a single interface for data discovery and metadata management the objects such as tables within each data catalog can be shared with any subscriber who has appropriate permissions.  
+Number of catalogs that you need for your corporate is entirely dependent on your use case and analytics culture. However, we highly recommend our customers to build multiple data catalog across many AWS accounts\(or optionally regions\) on top of their S3 data lakes for scalability and data domain ownership. To avoid data silos, ensure single source of truth and provide users with a single interface for data discovery and metadata management, the objects such as tables within each data catalog can be shared with any subscriber irrespecive of AWS accounts of the data consumer.  
 
 It is possible that customers might have a huge amount of data already stored in S3 in different AWS accounts. You create one data catalog in each AWS account  and share these catalog objects with other accounts by using cross account catalog sharing capabilities. In all cases, we encourage the data consumers to consume data from specific tables within the datalake.  For ease of data discovery, customers may want to organize their data somains in different **databases** if more than one data domains share the same data catalog.  
 
@@ -26,19 +26,17 @@ For setting up a single lake formation data catalog with data in different S3 bu
 
 ### How do I organize my data catalog?
 
-The success of your data lake journey is based on how analytic users use the data catalog. Therefore, a thoughtful approach to organize your data lake will go a long way. Datalake is not a system of record, it is stores data that's generated elsewhere. In many organizations, people look for datasets based on the system of records such as HR, ERP,  CRM, Ordering, Clickstream etc.  Similarly, it is a common pattern for people to look for  datasets by their transformation lifecycle stage within the data lake such as raw, curated and conformed. So, it is always a good idea to define a design convention that's easy and self-explanatory. 
+The success of your data lake journey is defined based on how analytic users use the data catalog. Therefore, a thoughtful approach to organize your data in the lake  will go a long way. Datalake is not a system of record, it stores data that's generated elsewhere. In many organizations, people look for datasets based on the system of records such as HR, ERP,  CRM, Ordering, Clickstream etc.  Similarly, it is a common pattern for people to look for  datasets by their transformation lifecycle stage within the data lake such as raw, curated and conformed. So, it is always a good idea to define a design convention that's easy and self-explanatory. 
 
 When multiple domains share the same AWS account, to effectively organize different data within the same catalog, Amazon LakeFormation provides the following components.
 
-* **Data catalog**:  A data catalog  contains information about all assets that have been ingested into or curated in the S3 data lake. It is designed to provide an interface for easy discovery of data assets,  security control and to provide a single source of truth for the contents of a data lake.
-* **User**: An user is a persona who performs an activity on a data lake like creating data assets, provide access to other users etc.
-* **Database:** A database is a namespace within a data catalog where  the catalog metadata resides. 
-* **Table:** A table is a schema representation of a data asset registered in AWS LakeFormation**.**
-* **Column:** A column represents a data attribute and its properties \(like name,datatype, metadata etc\) of a table.
+* **Data catalog**:  A data catalog  contains information about all assets that have been ingested into or curated in the S3 data lake. It is designed to provide an interface for easy discovery of data assets,  security control and to provide a single source of truth for the contents of a data lake. There can be only one catalog/region/account.
+  * **Database:** A database is a namespace within a data catalog where  the catalog metadata resides. 
+  * **Table:** A table is a schema representation of a data asset registered in AWS LakeFormation**.**
   * 
 * **Organize catalog databases by source of data**
 
-In general, we recommend out customers to physically separate their systems by different AWS accounts for scalability and reduction of blast radius of impact during an event. However, many of our customers use the same account for more than one application. In such cases, separate databases to store data generated from different source systems within the same account.  This makes it easy for users to search datasets by source source systems. The primary reason for this design pattern are: 
+In general, we recommend our customers to phisically separate their systems by different AWS accounts for scalability and reduction of blast radius of impact during an event. However, many of our customers use the same account for more than one application. In such cases, separate databases to store data generated from different source systems within the same account.  This makes it easy for users to search datasets by source source systems. The primary reason for this design pattern are: 
 
 * It makes it easier for data consumers to discover data by source of the data 
 * Related datasets are colocated in the database.
